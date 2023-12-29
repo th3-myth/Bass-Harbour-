@@ -1,0 +1,43 @@
+.container {
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+.address {
+    margin-top: 30px;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;    
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+input {
+    padding: 20px;
+    align-items: center;
+    height: 20px;
+    width: 300px;
+    border: 1px solid black;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+
+
+button {
+    width: 340px;
+    background-color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 60px;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}

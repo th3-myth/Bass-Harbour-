@@ -1,0 +1,20 @@
+.pay {
+    text-align: center;
+    padding: 25px;
+}
+
+.pay h2 {
+    margin: 10px 10px 10px 10px;
+}
+
+.upi {
+    border: 1px solid black;
+    width: 500px;
+    margin: auto;
+}
+
+.qr {
+    border: 1px solid black;
+    margin: auto;
+    width: 500px;
+}
