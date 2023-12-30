@@ -74,7 +74,7 @@ background: #FF4141;
 
 @media only screen and (width < 500px) {
   .nav{
-    display: inline-block;
+    display: block;
     box-shadow: none;
   }
   .nav-login-cart{
@@ -93,7 +93,7 @@ background: #FF4141;
 
 @media only screen and (width < 600px) and (width > 500px) {
   .nav{
-    display: inline-block;
+    display: block;
   }
   .nav-login-cart{
     justify-content: end;
