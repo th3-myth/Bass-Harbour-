@@ -72,7 +72,26 @@ background: #FF4141;
   color: white;
 }
 
-@media only screen and (width < 600px) {
+@media only screen and (width < 500px) {
+  .nav{
+    display: inline-block;
+    box-shadow: none;
+  }
+  .nav-login-cart{
+    justify-content: end;
+  }
+  .nav p{
+    font-size: 1em;
+  }
+  
+  .nav-menu{
+    gap: 20px;
+    padding: 0;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (width < 600px) and (width > 500px) {
   .nav{
     display: inline-block;
   }
