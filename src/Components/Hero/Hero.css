@@ -57,7 +57,8 @@
 @media only screen and (width < 600px){
   .hero {
     background: linear-gradient(#fa0303, #e1ffea22);
-    height: 50vh;
+    height: 70vh;
+
   }
   .hero-left {
     padding: 10px !important;
