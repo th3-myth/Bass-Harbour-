@@ -8,3 +8,10 @@
   margin: 60px 170px;
   text-transform: capitalize;
 }
+
+@media only screen and (width < 600px)  {
+  .breadcrums {
+    margin: 20px 40px;
+  }
+}
+

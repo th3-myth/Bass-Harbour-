@@ -23,17 +23,9 @@
       gap: 30px;
   }
 
-  @media only screen and (width < 600px) {
+  @media only screen and (width < 1000px) {
     .relatedproducts-item {
       display: grid;
       grid-template-columns: 1fr 1fr;
-    }
-  }
-  
-
-  @media only screen and (width > 600px) and (width < 1199) {
-    .relatedproducts-item {
-      display: grid;
-      grid-template-columns: 0.5fr 0.5fr 0.5fr;
     }
   }

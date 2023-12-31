@@ -55,6 +55,7 @@
 
 @media only screen and (width < 600px) {
   .footer {
+    padding-top: 30em;
     align-items: center;
   }
   .footer-logo p {
@@ -66,33 +67,20 @@
   .footer-logo{
     gap: 10px;
   }
-  .nav p{
-    font-size: 1em;
-  }
 }
 
-@media only screen and (width >= 600px){
-  .nav{
-    display: block;
+@media only screen and (width >= 600px) and (width <= 1000px){
+  .footer {
+    padding-top: 30em;
+    align-items: center;
   }
-  .nav-menu li {
-    padding: 0;
+  .footer-logo p {
+    font-size: 30px;
   }
-  .nav-menu {
-    justify-content: space-evenly;
+  .footer-links {
+    display: inline-block;
   }
-  .nav-login-cart{
-    justify-content: end;
+  .footer-logo{
+    gap: 10px;
   }
-  .nav p{
-    font-size: 1em;
-  }
-}
-
-@media only screen and (width >= 1200px){
-  .nav {
-    display: flex;
-  justify-content: space-around;
-  padding: 16px;
-}
 }
