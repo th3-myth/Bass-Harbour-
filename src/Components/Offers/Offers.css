@@ -1,51 +1,8 @@
 .offers {
-  width: 75%;
-  height: 95vh;
-  align-items: center;
-  display: flex;
-  margin: auto;
-  padding: 0px 140px;
   margin-bottom: 150px ;
   background-image: url('../Assets/exclusive_image.jpg');
-  background-size: 1440px;
   background-repeat: no-repeat;
   background-position: center;
-}
-.offers-left {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.offers-left h1 {
-  color: #171717;
-  font-size: 80px;
-  font-weight: 600;
-}
-.offers-left p {
-  color: #171717;
-  font-size: 22px;
-  font-weight: 500;
-}
-.offers-left button {
-  width: 282px;
-  height: 69px;
-  flex-shrink: 0;
-  border-radius: 34.5px;
-  background: #ff4141;
-  border: none;
-  color: #fff;
-  font-size: 22px;
-  font-weight: 500;
-  margin-top: 30px ;
-  cursor: pointer;
-}
-.offers-right {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-top: 50px;
 }
 
 @media only screen and (width < 600px){
@@ -53,7 +10,8 @@
     width: auto;
     background-size: cover;
     background-position: left;
-    height: calc(40vh);
+    height: 60vh;
+    background-size: 100%;
   }
 }
 
@@ -62,21 +20,17 @@
     width: auto;
     background-size: cover;
     background-position: left;
-    height: calc(40vh);
+    height: 80vh;
+    background-size: 100%;
   }
 }
 
 @media only screen and (width > 1200px) {
   .offers{
-    width: 75%;
-  height: 95vh;
-  align-items: center;
-  display: flex;
   margin: auto;
-  padding: 0px 140px;
   margin-bottom: 150px ;
   background-image: url('../Assets/exclusive_image.jpg');
-  background-size: 1440px;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   }
