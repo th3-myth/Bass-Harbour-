@@ -116,6 +116,9 @@
   .cartitems-format {
     gap: 10px;
   }
+  .cartitems-promobox {
+    width: 250px;
+  }
 }
 
 @media only screen and (width >= 600px) and (width <= 1199px){

@@ -6,9 +6,6 @@ const Pay = () => {
 
   return (
     <div className='pay'>
-            <div className='upi'>
-            <h2>UPI ID: fcbiz5snoii@freecharge</h2>
-            </div>
             <h2>OR By QR</h2>
             <div className="qr">
             <img src={qr} alt="" />

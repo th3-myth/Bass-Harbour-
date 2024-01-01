@@ -40,7 +40,7 @@ const ProductDisplay = (props) => {
         {product.description}
         </div>
         <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
-        <p className="productdisplay-right-category"><span>Category :</span> Headphones, wireless</p>
+        <p className="productdisplay-right-category"><span>Category :</span> Wireless</p>
         <p className="productdisplay-right-category"> <span>Brand :</span> Boat</p>
       </div>
     </div>
