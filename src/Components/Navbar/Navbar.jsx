@@ -18,9 +18,9 @@ const Navbar = () => {
       </Link>
       <ul className="nav-menu">
         <li onClick={()=>{setMenu("shop")}}><Link to='/' style={{ textDecoration: 'none', color: 'black' }}>Shop</Link>{menu==="shop"?<hr/>:<></>}</li>
-        <li onClick={()=>{setMenu("mens")}}><Link to='/mens' style={{ textDecoration: 'none', color: 'black' }}>Headphones</Link>{menu==="mens"?<hr/>:<></>}</li>
-        <li onClick={()=>{setMenu("womens")}}><Link to='/womens' style={{ textDecoration: 'none', color: 'black' }}>Speakers</Link>{menu==="womens"?<hr/>:<></>}</li>
-        <li onClick={()=>{setMenu("kids")}}><Link to='/kids' style={{ textDecoration: 'none', color: 'black' }}>TWS</Link>{menu==="kids"?<hr/>:<></>}</li>
+        <li onClick={()=>{setMenu("headphone")}}><Link to='/headphone' style={{ textDecoration: 'none', color: 'black' }}>Headphones</Link>{menu==="headphone"?<hr/>:<></>}</li>
+        <li onClick={()=>{setMenu("speaker")}}><Link to='/speaker' style={{ textDecoration: 'none', color: 'black' }}>Speakers</Link>{menu==="speaker"?<hr/>:<></>}</li>
+        <li onClick={()=>{setMenu("tws")}}><Link to='/tws' style={{ textDecoration: 'none', color: 'black' }}>TWS</Link>{menu==="tws"?<hr/>:<></>}</li>
       </ul>
       <div className="nav-login-cart">
         {localStorage.getItem('auth-token')
