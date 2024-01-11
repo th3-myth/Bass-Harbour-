@@ -9,7 +9,7 @@ const ShopCategory = (props) => {
   const [allproducts, setAllProducts] = useState([]);
 
   const fetchInfo = () => { 
-    fetch('https://bassback.onrender.com/allproducts') 
+    fetch('https://ec2-3-25-202-191.ap-southeast-2.compute.amazonaws.com/allproducts') 
             .then((res) => res.json()) 
             .then((data) => setAllProducts(data))
     }

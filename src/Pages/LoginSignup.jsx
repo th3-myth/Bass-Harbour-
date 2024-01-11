@@ -12,7 +12,7 @@ const LoginSignup = () => {
 
   const login = async () => {
     let dataObj;
-    await fetch('https://bassback.onrender.com/login', {
+    await fetch('https://ec2-3-25-202-191.ap-southeast-2.compute.amazonaws.com/login', {
       method: 'POST',
       headers: {
         Accept:'application/form-data',
@@ -35,7 +35,7 @@ const LoginSignup = () => {
 
   const signup = async () => {
     let dataObj;
-    await fetch('https://bassback.onrender.com/signup', {
+    await fetch('https://ec2-3-25-202-191.ap-southeast-2.compute.amazonaws.com/signup', {
       method: 'POST',
       headers: {
         Accept:'application/form-data',

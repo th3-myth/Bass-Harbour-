@@ -17,13 +17,13 @@ const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
   useEffect(() => {
-    fetch('https://bassback.onrender.com/allproducts') 
+    fetch('https://ec2-3-25-202-191.ap-southeast-2.compute.amazonaws.com/allproducts') 
           .then((res) => res.json()) 
           .then((data) => setProducts(data))
 
     if(localStorage.getItem("auth-token"))
     {
-      fetch('https://bassback.onrender.com/getcart', {
+      fetch('https://ec2-3-25-202-191.ap-southeast-2.compute.amazonaws.com/getcart', {
       method: 'POST',
       headers: {
         Accept:'application/form-data',
@@ -63,7 +63,7 @@ const ShopContextProvider = (props) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
     if(localStorage.getItem("auth-token"))
     {
-      fetch('https://bassback.onrender.com/addtocart', {
+      fetch('https://ec2-3-25-202-191.ap-southeast-2.compute.amazonaws.com/addtocart', {
       method: 'POST',
       headers: {
         Accept:'application/form-data',
@@ -81,7 +81,7 @@ const ShopContextProvider = (props) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
     if(localStorage.getItem("auth-token"))
     {
-      fetch('https://bassback.onrender.com/removefromcart', {
+      fetch('https://ec2-3-25-202-191.ap-southeast-2.compute.amazonaws.com/removefromcart', {
       method: 'POST',
       headers: {
         Accept:'application/form-data',
