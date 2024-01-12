@@ -102,6 +102,29 @@
   color: white;
   cursor: pointer;
 }
+
+@media only screen and (width < 400px) {
+  .cartitems {
+    margin: 10px 17px !important;
+  }
+  .cartitems-down {
+    display: inline-block;
+  }
+  .cartitems-format-main{
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .cartitems-format {
+    gap: 10px;
+    font-size: 12px;
+  }
+  .cartitems-promobox {
+    width: 250px;
+  }
+}
+
+
 @media only screen and (width < 600px) {
   .cartitems {
     margin: 10px 17px !important;

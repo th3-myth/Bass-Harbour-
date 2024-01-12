@@ -1,34 +1,12 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import "./CartItems.css";
 import cross_icon from "../Assets/cart_cross_icon.png";
 import { ShopContext } from "../../Context/ShopContext";
 import { Link } from "react-router-dom";
 
 const CartItems = () => {
-  const [state] = useState("Promo");
   const {products} = useContext(ShopContext);
   const {cartItems,removeFromCart,getTotalCartAmount} = useContext(ShopContext);
-  const [formData,setFormData] = useState({promo:""});
-
-
-  const changeHandler = (e) => {
-    setFormData({...formData,[e.target.name]:e.target.value});
-    }
-
-  const promo = async () => {
-    let dataObj;
-    await fetch('https://bassback.onrender.com/promo', {
-      method: 'POST',
-      headers: {
-        Accept:'application/form-data',
-        'Content-Type':'application/json',
-      },
-      body: JSON.stringify(formData),
-    })
-      .then((resp) => resp.json())
-      .then((data) => {dataObj=data});
-      console.log(dataObj);
-  }
 
   return (
     <div className="cartitems">
@@ -82,10 +60,10 @@ const CartItems = () => {
           <Link to="/payment"><button>PROCEED TO CHECKOUT</button></Link>
         </div>
         <div className="cartitems-promocode">
-          <p>If you have a {state} code, Enter it here</p>
+          <p>If you have a promo code, Enter it here</p>
           <div className="cartitems-promobox">
-            <input type="text" placeholder="promo code" value={formData.promo} onChange={changeHandler}/>
-            <button onClick={promo()}>Submit</button>
+            <input type="text" placeholder="promo code"/>
+            <button>Submit</button>
           </div>
         </div>
       </div>

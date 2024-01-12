@@ -3,7 +3,7 @@ import './Pay.css'
 import qr from '../Assets/qrcode.jpg'
 
 const Pay = () => {
-  const deliver = alert("Your Order will be deliverd in 3 to 5 working days");
+  const deliver = alert("Your Order will be deliverd in 3 to 5 working days after payment is Confirmed");
   return (
     <div className='pay'>
             
