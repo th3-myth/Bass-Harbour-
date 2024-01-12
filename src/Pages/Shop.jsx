@@ -11,10 +11,10 @@ const Shop = () => {
   const [newcollection, setNewCollection] = useState([]);
 
   const fetchInfo = () => { 
-    fetch('https://54.253.139.187/popularinwomen') 
+    fetch('https://bassback.onrender.com/popularinwomen') 
             .then((res) => res.json()) 
             .then((data) => setPopular(data))
-    fetch('https://54.253.139.187/newcollections') 
+    fetch('https://bassback.onrender.com/newcollections') 
             .then((res) => res.json()) 
             .then((data) => setNewCollection(data))
     }

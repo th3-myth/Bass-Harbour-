@@ -17,7 +17,7 @@ const CartItems = () => {
 
   const promo = async () => {
     let dataObj;
-    await fetch('https://54.253.139.187/promo', {
+    await fetch('https://bassback.onrender.com/promo', {
       method: 'POST',
       headers: {
         Accept:'application/form-data',

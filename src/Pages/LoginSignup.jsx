@@ -12,7 +12,7 @@ const LoginSignup = () => {
 
   const login = async () => {
     let dataObj;
-    await fetch('https://54.253.139.187/login', {
+    await fetch('https://bassback.onrender.com/login', {
       method: 'POST',
       headers: {
         Accept:'application/form-data',
@@ -35,7 +35,7 @@ const LoginSignup = () => {
 
   const signup = async () => {
     let dataObj;
-    await fetch('https://54.253.139.187/signup', {
+    await fetch('https://bassback.onrender.com/signup', {
       method: 'POST',
       headers: {
         Accept:'application/form-data',
