@@ -17,7 +17,7 @@ const CartItems = () => {
 
   const promo = async () => {
     let dataObj;
-    await fetch('https://ec2-3-25-202-191.ap-southeast-2.compute.amazonaws.com/promo', {
+    await fetch('https://54.253.139.187/promo', {
       method: 'POST',
       headers: {
         Accept:'application/form-data',
